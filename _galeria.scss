@@ -1,0 +1,22 @@
+.bodygaleria{
+    background: linear-gradient(rgb(34, 33, 33), white);
+    .galeriatitulo{
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px rgb(255, 255, 255);
+        font-size: 4em;
+        text-transform: capitalize;
+    }
+    .contenedor{
+        .contenedor__fotos{
+            row-gap:20px;
+            img:hover{
+                filter: grayscale(80%);
+                animation-name: imgopacas;
+                animation-duration: 3s;
+                transform: scale(0.95);
+                transition-duration: 3s;
+            }
+        }
+    }
+}

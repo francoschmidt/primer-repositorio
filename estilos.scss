@@ -1,0 +1,109 @@
+/* hero section */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+/* direccion footer */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+/* VICTORIA CREAM */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+/*para galeriatitulo*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+/* listas de sabores */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@import 'header';
+@import 'footer';
+@import 'informacion';
+@import 'galeria';
+@import 'contacto';
+@import 'sabores';
+@import 'index';
+
+
+$colorfondo:clarito;
+$font-weights: ("medida":20px, "total":500px);
+
+body{
+    @if $colorfondo == clarito{
+        background-color: rgb(224, 214, 159);
+    }@else if $colorfondo == azul{
+        background-color:blue;
+    }@else {
+        color:black;
+    }
+}
+
+
+
+/* MEDIA QUERIES RESPONSIVE */
+
+@media only screen and (max-width:480px)
+{
+    .section{
+        flex-direction: column;
+    }
+    .menu2{
+        @extend .section;
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:435px)
+{
+    .footer__redes{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:992px)
+{
+    .filtros__qs:hover{
+        transform: scale(1.1);
+        transition-duration: 2s;
+    }
+}
+@media only screen and (max-width:730px)
+{
+    .filtros__qs:hover{
+        transform: scale(1.1);
+        transition-duration: 2s;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 730px)
+{
+    #home{
+        font-size: 10px;
+    }
+}
+
+/* ANIMACIONES */
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes imgopacas{
+    0%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* BOTON GALERIA */
+.boton{
+    font-size: 20px;
+    color: black
+}
+.boton:hover{
+    color: black;
+}
+
+/* BOTON CONTACTO */
+#dropdownMenuButton1{
+    font-size: 20px;
+    color: black;
+}

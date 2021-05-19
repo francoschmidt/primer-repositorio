@@ -1,0 +1,91 @@
+.actualidad:hover, .protocolos:hover, .nuevospagos:hover, .otrainfo:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+
+.informacion{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding-top: 50px;
+    .informacion h1{
+        font-size: 50px;
+    }
+}
+.section4{
+    padding-top: 20px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    .actualidad{
+        grid-row: 1;
+        grid-column: 1;
+        width: 80%;
+        padding-left: 10%;
+        align-self: center;
+        .titulos{
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+        .textos{
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
+    .protocolos{
+        grid-row: 2;
+        grid-column: 2;
+        width: 80%;
+        padding-left: 10%;
+        .titulos{
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+        .textos{
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
+    .nuevospagos{
+        grid-row: 3;
+        grid-column: 1;
+        width: 80%;
+        padding-left: 10%;
+        .titulos{
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+        .textos{
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
+    .otrainfo{
+        grid-row: 4;
+        grid-column: 2;
+        width: 80%;
+        padding-left: 10%;
+        margin-bottom: 50px;
+        .titulos{
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+        .textos{
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
+}

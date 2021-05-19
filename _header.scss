@@ -1,0 +1,38 @@
+/* VICTORIA CREAM */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+$amarillo:yellow;
+header{
+    height: 62.8px;
+    .navbar{
+        background-image: linear-gradient(to right, rgb(19, 19, 165),rgb(0, 255, 221));
+        div{
+            #viccre{
+                color: $amarillo;
+                font-family: 'Slabo 27px', serif;
+                font-size: 25px;
+                animation-name: aparecer;
+                animation-duration: 3s;
+            }
+            #navbarSupportedContent{
+                #ulnavbar{
+                    li{
+                        a{
+                            font-weight: bold;
+                        }
+                    }
+                    .dropdown{
+                        button{
+                            font-weight: bold;
+                        }
+                    }
+                    .galeriamodal{
+                        #galeria{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.filtros__contactotitulo{
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Montserrat';
+}
+.contacto__filtros{
+    .contacto__emailytel{
+        @include tamaños(450px, auto);
+        border: 10px double;
+        background-color: white;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        .contacto__emailytel--logo{
+            font-size: 75px;
+        }
+        .contacto__emailytel--1{
+            font-size: 55px;
+            font-family:monospace;
+            font-style: oblique;
+        }
+        .contacto__emailytel--2{
+            font-size: 20px;
+            font-style: oblique;
+        }
+    }
+}

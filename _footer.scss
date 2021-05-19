@@ -1,0 +1,50 @@
+
+$tamaño: 450px;
+@mixin tamaños ($ancho,$alto){
+    width: $ancho;
+    height: $alto;    
+}
+footer{
+    background-image:url(multimedia/fondorep.jpg);
+    .footer__filtros{
+        .footer__direccion{
+            font-family: 'Quicksand', sans-serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .footer__redes{
+            .footer__redes--ig{
+                align-self: center;
+                i{
+                    border-radius: 5px;
+                    background: linear-gradient(225deg, rgb(174, 0, 255), red, yellow);
+                    padding: 4px;
+                    border-radius: 30px;
+                    font-size: 30px;
+                }
+            }
+            .footer__redes--fb{
+                margin-right: 10px;
+                margin-left: 10px;
+                i{
+                    color: rgb(16, 16, 192);
+                    font-size: 40px;
+                }
+            }
+            .footer__redes--wp{
+                i{
+                    color: rgb(16, 192, 25);
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}

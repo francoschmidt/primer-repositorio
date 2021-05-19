@@ -1,0 +1,412 @@
+/* hero section */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap");
+/* direccion footer */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+/* VICTORIA CREAM */
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+/*para galeriatitulo*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+/* listas de sabores */
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+/* VICTORIA CREAM */
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+header {
+  height: 62.8px;
+}
+
+header .navbar {
+  background-image: -webkit-gradient(linear, left top, right top, from(#1313a5), to(#00ffdd));
+  background-image: linear-gradient(to right, #1313a5, #00ffdd);
+}
+
+header .navbar div #viccre {
+  color: yellow;
+  font-family: 'Slabo 27px', serif;
+  font-size: 25px;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+header .navbar div #navbarSupportedContent #ulnavbar li a {
+  font-weight: bold;
+}
+
+header .navbar div #navbarSupportedContent #ulnavbar .dropdown button {
+  font-weight: bold;
+}
+
+header .navbar div #navbarSupportedContent #ulnavbar .galeriamodal #galeria {
+  font-weight: bold;
+}
+
+footer {
+  background-image: url(multimedia/fondorep.jpg);
+}
+
+footer .footer__filtros .footer__direccion {
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer .footer__filtros .footer__redes .footer__redes--ig {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .footer__filtros .footer__redes .footer__redes--ig i {
+  border-radius: 5px;
+  background: linear-gradient(225deg, #ae00ff, red, yellow);
+  padding: 4px;
+  border-radius: 30px;
+  font-size: 30px;
+}
+
+footer .footer__filtros .footer__redes .footer__redes--fb {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+footer .footer__filtros .footer__redes .footer__redes--fb i {
+  color: #1010c0;
+  font-size: 40px;
+}
+
+footer .footer__filtros .footer__redes .footer__redes--wp i {
+  color: #10c019;
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.actualidad:hover, .protocolos:hover, .nuevospagos:hover, .otrainfo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  text-shadow: 1px 1px 2px black;
+}
+
+.informacion {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  padding-top: 50px;
+}
+
+.informacion .informacion h1 {
+  font-size: 50px;
+}
+
+.section4 {
+  padding-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+  -ms-grid-rows: 2fr 2fr;
+      grid-template-rows: 2fr 2fr;
+}
+
+.section4 .actualidad {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  width: 80%;
+  padding-left: 10%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section4 .actualidad .titulos {
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.section4 .actualidad .textos {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section4 .protocolos {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  width: 80%;
+  padding-left: 10%;
+}
+
+.section4 .protocolos .titulos {
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.section4 .protocolos .textos {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section4 .nuevospagos {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  width: 80%;
+  padding-left: 10%;
+}
+
+.section4 .nuevospagos .titulos {
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.section4 .nuevospagos .textos {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section4 .otrainfo {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  width: 80%;
+  padding-left: 10%;
+  margin-bottom: 50px;
+}
+
+.section4 .otrainfo .titulos {
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.section4 .otrainfo .textos {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bodygaleria {
+  background: -webkit-gradient(linear, left top, left bottom, from(#222121), to(white));
+  background: linear-gradient(#222121, white);
+}
+
+.bodygaleria .galeriatitulo {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px white;
+  font-size: 4em;
+  text-transform: capitalize;
+}
+
+.bodygaleria .contenedor .contenedor__fotos {
+  row-gap: 20px;
+}
+
+.bodygaleria .contenedor .contenedor__fotos img:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+  -webkit-animation-name: imgopacas;
+          animation-name: imgopacas;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+
+.filtros__contactotitulo {
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+  font-family: 'Montserrat';
+}
+
+.contacto__filtros .contacto__emailytel {
+  width: 450px;
+  height: auto;
+  border: 10px double;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contacto__filtros .contacto__emailytel .contacto__emailytel--logo {
+  font-size: 75px;
+}
+
+.contacto__filtros .contacto__emailytel .contacto__emailytel--1 {
+  font-size: 55px;
+  font-family: monospace;
+  font-style: oblique;
+}
+
+.contacto__filtros .contacto__emailytel .contacto__emailytel--2 {
+  font-size: 20px;
+  font-style: oblique;
+}
+
+.bodysabores {
+  background-image: url(multimedia/imghela22.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bodysabores .titulosabores {
+  font-family: 'Montserrat';
+  font-size: 4em;
+  text-shadow: 2px 2px 5px white;
+}
+
+.bodysabores .sabores .listas__lista {
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Monoton', cursive;
+}
+
+.tituloshero {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.filtros__qs p {
+  font-size: 20px;
+}
+
+.filtros__qs:hover {
+  -webkit-box-shadow: 2px 2px 1px black;
+          box-shadow: 2px 2px 1px black;
+  background-color: #dbd194;
+}
+
+body {
+  background-color: #e0d69f;
+}
+
+/* MEDIA QUERIES RESPONSIVE */
+@media only screen and (max-width: 480px) {
+  .section, .menu2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .footer__redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .filtros__qs:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .filtros__qs:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 730px) {
+  #home {
+    font-size: 10px;
+  }
+}
+
+/* ANIMACIONES */
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes imgopacas {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imgopacas {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* BOTON GALERIA */
+.boton {
+  font-size: 20px;
+  color: black;
+}
+
+.boton:hover {
+  color: black;
+}
+
+/* BOTON CONTACTO */
+#dropdownMenuButton1 {
+  font-size: 20px;
+  color: black;
+}
+/*# sourceMappingURL=estilos.css.map */

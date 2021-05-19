@@ -1,0 +1,19 @@
+.bodysabores{
+    background-image: url(multimedia/imghela22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .titulosabores{
+        font-family: 'Montserrat';
+        font-size: 4em;
+        text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    }
+    .sabores{
+        .listas__lista{ 
+            font-size: x-large;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Monoton', cursive;
+        }
+    }
+}
