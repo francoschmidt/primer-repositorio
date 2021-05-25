@@ -20,3 +20,17 @@
         }
     }
 }
+@media screen and (max-width:600px){
+    .bodygaleria{
+        .galeriatitulo{
+            font-size: 3em;
+        }
+    }
+}
+@media screen and (max-width:300px){
+    .bodygaleria{
+        .galeriatitulo{
+            font-size: 2em;
+        }
+    }
+}

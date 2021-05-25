@@ -1,12 +1,44 @@
+/*para hero*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
 .tituloshero{
+    font-size: 40px;
     font-family: 'Montserrat', sans-serif;
 }
-.filtros__qs{
-    p{
+@media screen and (max-width:800px) 
+{
+    .tituloshero{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:600px) 
+{
+    .tituloshero{
         font-size: 20px;
     }
 }
-.filtros__qs:hover{
-    box-shadow: 2px 2px 1px black;
-    background-color: rgb(219, 209, 148);
+@media screen and (max-width:400px) 
+{
+    .tituloshero{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:992px) 
+{
+    .filtros__qs:hover{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transform: scale(1.1);
+        transition-duration: 3s;
+        background-color: rgb(212, 198, 134);
+        box-shadow: 2px 2px 1px black;
+    }
+}
+
+@media screen and (max-width:991px) 
+{
+    .filtros__qs{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 }

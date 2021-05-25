@@ -4,12 +4,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 /* VICTORIA CREAM */
 @import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
-/*para galeriatitulo*/
+/*para los h1 sabores, informacion, galeria, contacto*/
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
 /* listas de sabores */
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*h2 de informacion*/
+@import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
 /* VICTORIA CREAM */
 @import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap");
 header {
   height: 62.8px;
 }
@@ -29,16 +32,16 @@ header .navbar div #viccre {
           animation-duration: 3s;
 }
 
-header .navbar div #navbarSupportedContent #ulnavbar li a {
+header .navbar div #navbarNavAltMarkup .linksheader {
+  color: black;
   font-weight: bold;
+  font-size: 18px;
 }
 
-header .navbar div #navbarSupportedContent #ulnavbar .dropdown button {
-  font-weight: bold;
-}
-
-header .navbar div #navbarSupportedContent #ulnavbar .galeriamodal #galeria {
-  font-weight: bold;
+@media screen and (max-width: 296px) {
+  header .navbar div #viccre {
+    font-size: 20px;
+  }
 }
 
 footer {
@@ -90,122 +93,68 @@ a:hover {
   color: black;
 }
 
-.actualidad:hover, .protocolos:hover, .nuevospagos:hover, .otrainfo:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  text-shadow: 1px 1px 2px black;
+.informacion h1 {
+  font-family: 'Montserrat';
+  font-size: 60px;
+  text-shadow: 2px 2px 5px black;
 }
 
-.informacion {
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  padding-top: 50px;
+.actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2 {
+  font-family: 'Mate SC', serif;
+  font-size: 45px;
 }
 
-.informacion .informacion h1 {
-  font-size: 50px;
+.actualidad p, .protocolos p, .nuevospagos p, .otrainfo p {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.section4 {
-  padding-top: 20px;
-  display: -ms-grid;
-  display: grid;
-  text-align: center;
-  -ms-grid-columns: 2fr 2fr;
-      grid-template-columns: 2fr 2fr;
-  -ms-grid-rows: 2fr 2fr;
-      grid-template-rows: 2fr 2fr;
+@media screen and (max-width: 1201px) {
+  .informacion h1 {
+    font-size: 55px;
+  }
+  .actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2 {
+    font-size: 42px;
+  }
+  .actualidad p, .protocolos p, .nuevospagos p, .otrainfo p {
+    font-size: 22.5px;
+  }
 }
 
-.section4 .actualidad {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  width: 80%;
-  padding-left: 10%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+@media screen and (max-width: 993px) {
+  .informacion h1 {
+    font-size: 50px;
+  }
+  .actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2 {
+    font-size: 39px;
+  }
+  .actualidad p, .protocolos p, .nuevospagos p, .otrainfo p {
+    font-size: 20px;
+  }
 }
 
-.section4 .actualidad .titulos {
-  font-size: 3rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: capitalize;
-  font-style: italic;
+@media screen and (max-width: 769px) {
+  .informacion h1 {
+    font-size: 45px;
+  }
+  .actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2 {
+    font-size: 36px;
+  }
+  .actualidad p, .protocolos p, .nuevospagos p, .otrainfo p {
+    font-size: 17.5px;
+  }
 }
 
-.section4 .actualidad .textos {
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.section4 .protocolos {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 2;
-  grid-column: 2;
-  width: 80%;
-  padding-left: 10%;
-}
-
-.section4 .protocolos .titulos {
-  font-size: 3rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: capitalize;
-  font-style: italic;
-}
-
-.section4 .protocolos .textos {
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.section4 .nuevospagos {
-  -ms-grid-row: 3;
-  grid-row: 3;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  width: 80%;
-  padding-left: 10%;
-}
-
-.section4 .nuevospagos .titulos {
-  font-size: 3rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: capitalize;
-  font-style: italic;
-}
-
-.section4 .nuevospagos .textos {
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.section4 .otrainfo {
-  -ms-grid-row: 4;
-  grid-row: 4;
-  -ms-grid-column: 2;
-  grid-column: 2;
-  width: 80%;
-  padding-left: 10%;
-  margin-bottom: 50px;
-}
-
-.section4 .otrainfo .titulos {
-  font-size: 3rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: capitalize;
-  font-style: italic;
-}
-
-.section4 .otrainfo .textos {
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+@media screen and (max-width: 576px) {
+  .informacion h1 {
+    font-size: 40px;
+  }
+  .actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2 {
+    font-size: 33px;
+  }
+  .actualidad p, .protocolos p, .nuevospagos p, .otrainfo p {
+    font-size: 16px;
+  }
 }
 
 .bodygaleria {
@@ -236,6 +185,18 @@ a:hover {
           transform: scale(0.95);
   -webkit-transition-duration: 3s;
           transition-duration: 3s;
+}
+
+@media screen and (max-width: 600px) {
+  .bodygaleria .galeriatitulo {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .bodygaleria .galeriatitulo {
+    font-size: 2em;
+  }
 }
 
 .filtros__contactotitulo {
@@ -270,6 +231,24 @@ a:hover {
   font-style: oblique;
 }
 
+@media screen and (max-width: 600px) {
+  .filtros__contactotitulo {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .filtros__contactotitulo {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contacto__filtros .contacto__emailytel .contacto__emailytel--1 {
+    font-size: 40px;
+  }
+}
+
 .bodysabores {
   background-image: url(multimedia/imghela22.jpg);
   background-repeat: no-repeat;
@@ -279,29 +258,77 @@ a:hover {
 
 .bodysabores .titulosabores {
   font-family: 'Montserrat';
-  font-size: 4em;
+  font-size: 50px;
   text-shadow: 2px 2px 5px white;
 }
 
-.bodysabores .sabores .listas__lista {
-  font-size: x-large;
+.listas__lista li {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
   text-transform: uppercase;
-  font-weight: bold;
-  font-family: 'Monoton', cursive;
 }
 
+@media screen and (min-width: 576px) {
+  .listas__lista li {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .listas__lista li {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bodysabores .titulosabores {
+    font-size: 2em;
+  }
+}
+
+/*para hero*/
 .tituloshero {
+  font-size: 40px;
   font-family: 'Montserrat', sans-serif;
 }
 
-.filtros__qs p {
-  font-size: 20px;
+@media screen and (max-width: 800px) {
+  .tituloshero {
+    font-size: 30px;
+  }
 }
 
-.filtros__qs:hover {
-  -webkit-box-shadow: 2px 2px 1px black;
-          box-shadow: 2px 2px 1px black;
-  background-color: #dbd194;
+@media screen and (max-width: 600px) {
+  .tituloshero {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tituloshero {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .filtros__qs:hover {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition-duration: 3s;
+            transition-duration: 3s;
+    background-color: #d4c686;
+    -webkit-box-shadow: 2px 2px 1px black;
+            box-shadow: 2px 2px 1px black;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .filtros__qs {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 body {
@@ -323,38 +350,11 @@ body {
 
 @media only screen and (max-width: 435px) {
   .footer__redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     text-align: center;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .filtros__qs:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition-duration: 2s;
-            transition-duration: 2s;
-  }
-}
-
-@media only screen and (max-width: 730px) {
-  .filtros__qs:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition-duration: 2s;
-            transition-duration: 2s;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 730px) {
-  #home {
-    font-size: 10px;
   }
 }
 
@@ -392,21 +392,5 @@ body {
   100% {
     opacity: 1;
   }
-}
-
-/* BOTON GALERIA */
-.boton {
-  font-size: 20px;
-  color: black;
-}
-
-.boton:hover {
-  color: black;
-}
-
-/* BOTON CONTACTO */
-#dropdownMenuButton1 {
-  font-size: 20px;
-  color: black;
 }
 /*# sourceMappingURL=estilos.css.map */

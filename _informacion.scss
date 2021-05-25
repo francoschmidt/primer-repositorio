@@ -1,91 +1,63 @@
-.actualidad:hover, .protocolos:hover, .nuevospagos:hover, .otrainfo:hover{
-    transform: scale(1.1);
-    transition-duration: 2s;
-    text-shadow: 1px 1px 2px black;
-}
-
-
-
-
 .informacion{
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    padding-top: 50px;
+    h1{
+    font-family: 'Montserrat';
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+}
+.actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2{
+    font-family: 'Mate SC', serif;
+    font-size: 45px;
+}
+.actualidad p, .protocolos p, .nuevospagos p, .otrainfo p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:1201px) 
+{
+    .informacion h1{
+        font-size: 55px;
+    }
+    .actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2{
+        font-size: 42px;
+    }
+    .actualidad p, .protocolos p, .nuevospagos p, .otrainfo p{
+        font-size: 22.5px;
+    }
+}
+@media screen and (max-width:993px) 
+{
     .informacion h1{
         font-size: 50px;
     }
+    .actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2{
+        font-size: 39px;
+    }
+    .actualidad p, .protocolos p, .nuevospagos p, .otrainfo p{
+        font-size: 20px;
+    }
 }
-.section4{
-    padding-top: 20px;
-    display: grid;
-    text-align: center;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
-    .actualidad{
-        grid-row: 1;
-        grid-column: 1;
-        width: 80%;
-        padding-left: 10%;
-        align-self: center;
-        .titulos{
-            font-size: 3rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-transform: capitalize;
-            font-style: italic;
-        }
-        .textos{
-            font-size: 20px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+@media screen and (max-width:769px) 
+{
+    .informacion h1{
+        font-size: 45px;
     }
-    .protocolos{
-        grid-row: 2;
-        grid-column: 2;
-        width: 80%;
-        padding-left: 10%;
-        .titulos{
-            font-size: 3rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-transform: capitalize;
-            font-style: italic;
-        }
-        .textos{
-            font-size: 20px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+    .actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2{
+        font-size: 36px;
     }
-    .nuevospagos{
-        grid-row: 3;
-        grid-column: 1;
-        width: 80%;
-        padding-left: 10%;
-        .titulos{
-            font-size: 3rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-transform: capitalize;
-            font-style: italic;
-        }
-        .textos{
-            font-size: 20px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+    .actualidad p, .protocolos p, .nuevospagos p, .otrainfo p{
+        font-size: 17.5px;
     }
-    .otrainfo{
-        grid-row: 4;
-        grid-column: 2;
-        width: 80%;
-        padding-left: 10%;
-        margin-bottom: 50px;
-        .titulos{
-            font-size: 3rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-transform: capitalize;
-            font-style: italic;
-        }
-        .textos{
-            font-size: 20px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+}
+@media screen and (max-width:576px) 
+{
+    .informacion h1{
+        font-size: 40px;
+    }
+    .actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2{
+        font-size: 33px;
+    }
+    .actualidad p, .protocolos p, .nuevospagos p, .otrainfo p{
+        font-size: 16px;
     }
 }

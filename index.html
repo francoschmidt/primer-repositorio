@@ -11,9 +11,19 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- a css -->
     <link rel="stylesheet" href="estilos.css"> 
+    <link rel="shortcut icon" href="multimedia/logo1.jpg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="city" content="Tornquist">
+    <meta name="country" content="Argentina">
+    <meta name="distribution" content="global">
+    <meta name="language" content="spanish">
+    <meta name="revisit-after" content="5 days">
+    <meta name="author" content="Franco Schmidt">
+    <meta name="doc-type" content="web page">
+    <meta name="Copyright" content="Propietario del Copyright">
     <meta name="description" content="Helados Victoria Tornquist - Pagina principal. Quiénes somos, dónde estamos ubicados y más.">
     <meta name="keywords" content="Heladeria, Helados, Victoria, Cream, Postres">
     <title>Helados Victoria</title>
@@ -21,36 +31,31 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#" id="viccre">VICTORIA CREAM</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul id="ulnavbar" class="navbar-nav">
-                <li class="nav-item nav-item1">
-                  <a id="home" class="nav-link active fs-5" href="index.html">Home</a>
-                </li>
-                <li class="nav-item nav-item2">
-                  <a id="sabores" class="nav-link active fs-5" href="paginas/sabores.html">Sabores</a>
-                </li>
-                <li class="nav-item nav-item3">
-                  <a id="info" class="nav-link active fs-5" href="paginas/informacion.html">Información</a>
-                </li>
-                <li class="nav-item">
-                  <a id="galeria" class="nav-link active fs-5" href="paginas/galeria.html">Galería</a>
-                </li>
-                <!-- boton dropdown contacto -->
-                <div class="dropdown">
-                  <button class="contactoheader btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Contacto</button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="paginas/contacto.html">Ver medios de contacto</a></li>
-                    <li><a class="dropdown-item" href="https://wa.me/5492915388789">Ir al chat de whatsapp</a></li>
-                  </ul>
-                </div>
-              </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="viccre">VICTORIA CREAM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="linksheader navbar-nav">
+              <a class="nav-link active text-center" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active text-center" href="paginas/sabores.html">Sabores</a>
+              <a class="nav-link active text-center" href="paginas/informacion.html">Información</a>
+              <a class="nav-link active text-center" href="paginas/galeria.html" tabindex="-1" aria-disabled="true">Galería</a>
+              <!-- boton dropdown contacto -->
+              <li class="nav-item dropdown">
+                <a class="linksheader nav-link active dropdown-toggle text-center" href="contacto.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="paginas/contacto.html">Ver medios de contacto</a></li>
+                  <li><a class="dropdown-item" href="https://wa.me/5492915388789">Ir al chat de whatsapp</a></li>
+                </ul>
+              </li>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
     <!-- section hero -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -61,24 +66,24 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="multimedia/imgg2.jpg" class="d-block w-100" alt="Img 1 carrusel">
-          <div class="carousel-caption d-none d-md-block">
-            <p class="tituloshero wow shake fs-1">¡Bienvenidos!</p>
-            <p class="tituloshero wow shake fs-1 fw-bold">Helados Victoria Tornquist</p>
+          <img src="multimedia/imgg2.jpg" class="d-block w-100" alt="Img 1">
+          <div class="carousel-caption">
+            <p class="tituloshero wow shake">¡Bienvenidos!</p>
+            <p class="tituloshero wow shake fw-bold">Helados Victoria Tornquist</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="multimedia/he.jpg" class="d-block w-100" alt="Img 2 carrusel">
-          <div class="carousel-caption d-none d-md-block">
-            <p class="tituloshero text-dark wow shake fs-1">¡Bienvenidos!</p>
-            <p class="tituloshero text-dark wow shake fs-1 fw-bold">Helados Victoria Tornquist</p>
+          <img src="multimedia/he.jpg" class="d-block w-100" alt="Img 2">
+          <div class="carousel-caption">
+            <p class="tituloshero text-dark wow shake">¡Bienvenidos!</p>
+            <p class="tituloshero text-dark wow shake fw-bold">Helados Victoria Tornquist</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="multimedia/imgg3.jpg" class="d-block w-100" alt="Img 3 carrusel">
-          <div class="carousel-caption d-none d-md-block">
-            <p class="tituloshero text-light wow shake fs-1">¡Bienvenidos!</p>
-            <p class="tituloshero text-light wow shake fs-1 fw-bold">Helados Victoria Tornquist</p>
+          <img src="multimedia/imgg3.jpg" class="d-block w-100" alt="Img 3">
+          <div class="carousel-caption">
+            <p class="tituloshero text-light wow shake">¡Bienvenidos!</p>
+            <p class="tituloshero text-light wow shake fw-bold">Helados Victoria Tornquist</p>
           </div>
         </div>
       </div>
@@ -98,7 +103,7 @@
     <div class="mapayqs__filtros row d-flex align-items-center">
         <div class="filtros__qs col-xs-6 col-lg-6">
             <h1 class="filtros__qs--titulo text-center fs-1 fst-italic">¿Quiénes somos?</h1>
-            <p class="filtros__qs--texto text-center">Formamos parte de la cadena nacional de helados Victoria Cream. Nuestra sucursal se encuentra en el partido de Tornquist, en la ciudad cabecera. Contamos con una gran variedad de helados (53 gustos, a los que se les puede agregar salsas y aderezos como chips de chocolate, microgalletitas, crocante de maní, entre otros). También tenemos para vender bebidas y postres como almendrados, bombones suizos, cassatas y tortas heladas. Te esperamos en temporada de verano con la mejor atención en Ernesto Tornquist 240. Para hacer pedidos con envío a domicilio y ver más info ir a la sección 'Información'.</p>
+            <p class="filtros__qs--texto text-center fs-5">Desde hace 23 años formamos parte de la cadena nacional de helados Victoria Cream. Nuestra sucursal se encuentra en el partido de Tornquist, en la ciudad cabecera. Contamos con una gran variedad de helados (53 gustos, a los que se les puede agregar salsas y aderezos como chips de chocolate, microgalletitas, crocante de maní, entre otros). También tenemos para vender bebidas y postres como almendrados, bombones suizos, cassatas y tortas heladas. Te esperamos en temporada de verano con la mejor atención en Ernesto Tornquist 240. Para hacer pedidos con envío a domicilio y/o ver más info ir a la sección 'Información'.</p>
         </div>
         <div class="filtros__espaciolibre col-xs-1 col-lg-1"></div>
         <div class="filtros__mapadiv mb-3 mt-3 col-xs-5 col-lg-5">
@@ -106,10 +111,6 @@
         </div>
     </div>
 </section>
-
-
-
-
 
 <!-- footer -->
 <footer class="footer container-fluid">

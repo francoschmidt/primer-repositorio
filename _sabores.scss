@@ -5,15 +5,39 @@
     background-attachment: fixed;
     .titulosabores{
         font-family: 'Montserrat';
-        font-size: 4em;
+        font-size: 50px;
         text-shadow: 2px 2px 5px rgb(255, 255, 255);
     }
-    .sabores{
-        .listas__lista{ 
-            font-size: x-large;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-family: 'Monoton', cursive;
+}
+.listas__lista{
+    li{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+}
+@media screen and (min-width:576px) 
+{
+    .listas__lista{
+        li{
+            font-size: 30px;
+        }
+    }
+}
+@media screen and (max-width:576px) 
+{
+    .listas__lista{
+        li{
+            font-size: 20px;
+        }
+    }
+
+}
+@media screen and (max-width:576px) 
+{
+    .bodysabores{
+        .titulosabores{
+            font-size: 2em;
         }
     }
 }

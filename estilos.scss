@@ -4,10 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 /* VICTORIA CREAM */
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
-/*para galeriatitulo*/
+/*para los h1 sabores, informacion, galeria, contacto*/
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 /* listas de sabores */
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*h2 de informacion*/
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
 @import 'header';
 @import 'footer';
@@ -19,7 +21,6 @@
 
 
 $colorfondo:clarito;
-$font-weights: ("medida":20px, "total":500px);
 
 body{
     @if $colorfondo == clarito{
@@ -48,29 +49,8 @@ body{
 @media only screen and (max-width:435px)
 {
     .footer__redes{
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
-    }
-}
-@media only screen and (min-width:992px)
-{
-    .filtros__qs:hover{
-        transform: scale(1.1);
-        transition-duration: 2s;
-    }
-}
-@media only screen and (max-width:730px)
-{
-    .filtros__qs:hover{
-        transform: scale(1.1);
-        transition-duration: 2s;
-    }
-}
-@media only screen and (min-width: 576px) and (max-width: 730px)
-{
-    #home{
-        font-size: 10px;
     }
 }
 
@@ -91,19 +71,4 @@ body{
     100%{
         opacity: 1;
     }
-}
-
-/* BOTON GALERIA */
-.boton{
-    font-size: 20px;
-    color: black
-}
-.boton:hover{
-    color: black;
-}
-
-/* BOTON CONTACTO */
-#dropdownMenuButton1{
-    font-size: 20px;
-    color: black;
 }

@@ -11,9 +11,19 @@
     <script src="../js/bootstrap.min.js"></script>
     <!-- a css -->
     <link rel="stylesheet" href="../estilos.css">
+    <link rel="shortcut icon" href="../multimedia/logo1.jpg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="city" content="Tornquist">
+    <meta name="country" content="Argentina">
+    <meta name="distribution" content="global">
+    <meta name="language" content="spanish">
+    <meta name="revisit-after" content="5 days">
+    <meta name="author" content="Franco Schmidt">
+    <meta name="doc-type" content="web page">
+    <meta name="Copyright" content="Propietario del Copyright">
     <meta name="description" content="Helados Victoria Tornquist - Información. Te mostramos nuestras noticias para mantenerte al día.">
     <meta name="keywords" content="Heladeria, Helados, Victoria, Cream, Postres, Informacion, Info">
     <title>HV-Información</title>
@@ -21,66 +31,83 @@
 <body>
     <!-- header -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" id="viccre">VICTORIA CREAM</a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="ulnavbar" class="navbar-nav">
-              <li class="nav-item">
-                <a id="home" class="nav-link active fs-5" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a id="sabores" class="nav-link active fs-5" href="sabores.html">Sabores</a>
-              </li>
-              <li class="nav-item">
-                <a id="info" class="nav-link active fs-5" href="informacion.html">Información</a>
-              </li>
-              <li class="nav-item">
-                <a id="galeria" class="nav-link active fs-5" href="galeria.html">Galería</a>
-              </li>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="linksheader navbar-nav">
+              <a class="nav-link active text-center" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link active text-center" href="sabores.html">Sabores</a>
+              <a class="nav-link active text-center" href="informacion.html">Información</a>
+              <a class="nav-link active text-center" href="galeria.html" tabindex="-1" aria-disabled="true">Galería</a>
               <!-- boton dropdown contacto -->
-              <div class="dropdown">
-                <button class="contactoheader btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Contacto</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li class="nav-item dropdown">
+                <a class="linksheader nav-link active dropdown-toggle text-center" href="contacto.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="contacto.html">Ver medios de contacto</a></li>
                   <li><a class="dropdown-item" href="https://wa.me/5492915388789">Ir al chat de whatsapp</a></li>
                 </ul>
-              </div>
-            </ul>
+              </li>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <div class="informacion">
-        <h1>Información</h1>
+
+
+  <section class="container section4">
+
+    <div class="row">
+
+      <div class="informacion col-lg-12 col-md-12 col-sm-12 col-12 mt-3 text-center">
+        <h1 class="wow animate flip">Información</h1>
+      </div>
+
+      <div class="actualidad col-lg-6 col-md-6 col-sm-6 mt-3">
+          <h2 class="titulos text-center fw-bold">Actualidad</h2>
+          <p class="textos text-center">Heladería cerrada en temporada de invierno. Hasta el inicio de la primavera nos manejamos solamente con envíos a domicilio en los horarios de 13 a 15 y 20 a 23 hs. Tomamos pedidos hasta las 21 hs. Para hacer un pedido y/o ver gustos disponibles, tamaños y precios comunicarse al 2915388789.</p>
+      </div>
+
+      <div class="col-6">
+        <h1></h1>
+      </div>
+
+      <div class="col-6">
+        <h1></h1>
+      </div>
+
+      <div class="protocolos col-lg-6 col-md-6 col-sm-6">
+          <h2 class="titulos text-center fw-bold">Protocolos</h2>
+          <p class="textos text-center">En los envíos a domicilio se ruega a los clientes que al recibir el pedido usen barbijo. En temporada de primavera-verano (heladería abierta) se permite el ingreso de hasta 4 personas (con barbijo). También contamos con alcohol diluído para mayor prevención.</p>
+      </div>
+
+      <div class="nuevospagos col-lg-6 col-md-6 col-sm-6">
+          <h2 class="titulos text-center fw-bold">Pagos</h2>
+          <p class="textos text-center">Nos renovamos para mayor comodidad de nuestros clientes. Con la reciente adquisición de un lector de tarjetas, aceptamos tarjetas de crédito y débito de todos los bancos.</p>
+      </div>
+
+      <div class="col-6">
+        <h1></h1>
+      </div>
+
+      <div class="col-6">
+        <h1></h1>
+      </div>
+
+      <div class="otrainfo col-lg-6 col-md-6 col-sm-6">
+          <h2 class="titulos text-center fw-bold">Otros datos</h2>
+          <p class="textos text-center">Contamos con red de wi-fi libre. También tenemos baños para ambos sexos para que utilice la clientela.</p>
+      </div>
+
     </div>
 
-    <section class="section4">
-
-      <div class="actualidad">
-          <h2 class="titulos">actualidad</h2>
-          <p class="textos">Heladería cerrada en temporada de invierno. Hasta el inicio de la primavera nos manejamos solamente con envíos a domicilio en los horarios de 13 a 15 y 20 a 23 hs. Tomamos pedidos hasta las 21 hs. Para hacer un pedido y/o ver gustos disponibles, tamaños y precios comunicarse al 2915388789.</p>
-      </div>
-
-      <div class="protocolos">
-          <h2 class="titulos">Protocolos</h2>
-          <p class="textos">En los envíos a domicilio se ruega a los clientes que al recibir el pedido usen barbijo. En temporada de primavera-verano (heladería abierta) se permite el ingreso de hasta 4 personas (con barbijo). También contamos con alcohol diluído para mayor prevención.</p>
-      </div>
-
-      <div class="nuevospagos">
-          <h2 class="titulos">Pagos</h2>
-          <p class="textos">Nos renovamos para mayor comodidad de nuestros clientes. Con la reciente adquisición de un lector de tarjetas, aceptamos tarjetas de crédito y débito de todos los bancos.</p>
-      </div>
-
-      <div class="otrainfo">
-          <h2 class="titulos">Otra info</h2>
-          <p class="textos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cumque animi consequatur, maxime ullam provident voluptatum reprehenderit dignissimos itaque mollitia amet nesciunt delectus accusamus! Velit consequatur magni qui repellat recusandae.</p>
-      </div>
+  </section>
 
 
-
-      </section>
     <!-- footer -->
     <footer class="footer container-fluid">
       <div class="footer__filtros d-flex flex-column">
