@@ -58,6 +58,8 @@ footer .footer__filtros .footer__redes .footer__redes--ig {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-decoration: none;
+  color: black;
 }
 
 footer .footer__filtros .footer__redes .footer__redes--ig i {
@@ -81,16 +83,6 @@ footer .footer__filtros .footer__redes .footer__redes--fb i {
 footer .footer__filtros .footer__redes .footer__redes--wp i {
   color: #10c019;
   font-size: 40px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  text-decoration: none;
-  color: black;
 }
 
 .informacion h1 {
@@ -177,8 +169,6 @@ a:hover {
 .bodygaleria .contenedor .contenedor__fotos img:hover {
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
-  -webkit-animation-name: imgopacas;
-          animation-name: imgopacas;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-transform: scale(0.95);
@@ -337,24 +327,11 @@ body {
 
 /* MEDIA QUERIES RESPONSIVE */
 @media only screen and (max-width: 480px) {
-  .section, .menu2 {
+  .section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .menu2 {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 435px) {
-  .footer__redes {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    text-align: center;
   }
 }
 
@@ -370,24 +347,6 @@ body {
 @keyframes aparecer {
   0% {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes imgopacas {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes imgopacas {
-  0% {
-    opacity: 0.1;
   }
   100% {
     opacity: 1;

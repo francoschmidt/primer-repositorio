@@ -21,7 +21,6 @@
 
 
 $colorfondo:clarito;
-
 body{
     @if $colorfondo == clarito{
         background-color: rgb(224, 214, 159);
@@ -41,32 +40,14 @@ body{
     .section{
         flex-direction: column;
     }
-    .menu2{
-        @extend .section;
-        font-size: 30px;
-    }
 }
-@media only screen and (max-width:435px)
-{
-    .footer__redes{
-        flex-direction: row;
-        text-align: center;
-    }
-}
+
 
 /* ANIMACIONES */
 
 @keyframes aparecer{
     0%{
         opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes imgopacas{
-    0%{
-        opacity: 0.1;
     }
     100%{
         opacity: 1;

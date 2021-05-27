@@ -1,9 +1,3 @@
-
-$tamaño: 450px;
-@mixin tamaños ($ancho,$alto){
-    width: $ancho;
-    height: $alto;    
-}
 footer{
     background-image:url(multimedia/fondorep.jpg);
     .footer__filtros{
@@ -15,6 +9,8 @@ footer{
         .footer__redes{
             .footer__redes--ig{
                 align-self: center;
+                text-decoration: none;
+                color: black;
                 i{
                     border-radius: 5px;
                     background: linear-gradient(225deg, rgb(174, 0, 255), red, yellow);
@@ -39,12 +35,4 @@ footer{
             }
         }
     }
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-    text-decoration: none;
-    color: black;
 }

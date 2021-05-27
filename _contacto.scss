@@ -1,3 +1,10 @@
+$tamaño:450px;
+
+@mixin tamaños ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
 .filtros__contactotitulo{
     font-size: 4em;
     text-align: center;
@@ -6,7 +13,7 @@
 }
 .contacto__filtros{
     .contacto__emailytel{
-        @include tamaños(450px, auto);
+        @include tamaños($tamaño,auto);
         border: 10px double;
         background-color: white;
         text-align: center;
