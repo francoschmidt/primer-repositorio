@@ -10,11 +10,9 @@
     .contenedor{
         .contenedor__fotos{
             row-gap:20px;
-            img:hover{
-                filter: grayscale(80%);
-                animation-duration: 3s;
-                transform: scale(0.95);
-                transition-duration: 3s;
+            img{
+                filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+                transition: 2s;
             }
         }
     }
@@ -30,6 +28,22 @@
     .bodygaleria{
         .galeriatitulo{
             font-size: 2em;
+        }
+    }
+}
+@media screen and (min-width:768px){
+    .contenedor{
+        .contenedor__fotos{
+            img{
+                border-radius: 50px;
+            }
+        }
+    }
+}
+.contenedor{
+    .contenedor__fotos{
+        img:hover{
+            filter: drop-shadow(5px 5px 5px rgb(0, 0, 0)) grayscale(100%);
         }
     }
 }

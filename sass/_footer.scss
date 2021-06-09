@@ -1,5 +1,7 @@
+$negro:black;
 footer{
-    background-image:url(multimedia/fondorep.jpg);
+    background:rgb(160, 160, 168);
+    box-shadow: -1px -1px 10px black;
     .footer__filtros{
         .footer__direccion{
             font-family: 'Quicksand', sans-serif;
@@ -10,27 +12,37 @@ footer{
             .footer__redes--ig{
                 align-self: center;
                 text-decoration: none;
-                color: black;
+                color: rgb(160, 160, 168);
                 i{
                     border-radius: 5px;
-                    background: linear-gradient(225deg, rgb(174, 0, 255), red, yellow);
+                    background: $negro;
                     padding: 4px;
                     border-radius: 30px;
                     font-size: 30px;
+                }
+                i:hover{
+                    background: linear-gradient(225deg, rgb(174, 0, 255), red, yellow);
+                    color: $negro;
                 }
             }
             .footer__redes--fb{
                 margin-right: 10px;
                 margin-left: 10px;
                 i{
-                    color: rgb(16, 16, 192);
+                    color: $negro;
                     font-size: 40px;
+                }
+                i:hover{
+                    color: rgb(24, 24, 252);
                 }
             }
             .footer__redes--wp{
                 i{
-                    color: rgb(16, 192, 25);
+                    color: $negro;
                     font-size: 40px;
+                }
+                i:hover{
+                    color: rgb(34, 240, 44);
                 }
             }
         }

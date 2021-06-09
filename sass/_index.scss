@@ -1,0 +1,123 @@
+/*para hero*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+.tituloshero{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imgredondas{
+    img{
+        border-radius: 500px;
+        filter: drop-shadow(2px 2px 5px black);
+    }
+}
+
+.mapayqs{
+    .mapayqs__filtros{
+        .filtros__qs{
+            .filtros__qs--texto{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .mapayqs{
+        .mapayqs__filtros{
+            .filtros__qs{
+                .filtros__qs--texto{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:992px) 
+{
+    .filtros__qs:hover{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transform: scale(1.1);
+        transition-duration: 3s;
+        box-shadow: 2px 2px 1px black;
+    }
+}
+
+@media screen and (max-width:991px) 
+{
+    .filtros__qs{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+/*maquina escribir*/
+.contenedor{
+	margin: auto;
+	display: table;
+    .maqesq{ 
+	    position: relative; 
+	    float: left;
+	    color: #fff;
+	    font-size: 20px;
+        span{
+            position:absolute;
+            padding: 2px;
+            right:0;
+            width:0;
+            background: rgb(224, 214, 159);
+            border-left: 1px solid #000;
+            animation: escribir 6s steps(33) infinite alternate;
+        }
+    }
+}
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+@media only screen and (max-width:343px)
+{
+    .contenedor{
+        .maqesq{
+            font-size: 15px;
+        }
+    }
+}
+
+/*maquina escribir fin*/
+
+@media screen and (max-width:800px) 
+{
+    .tituloshero{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:600px) 
+{
+    .tituloshero{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:400px) 
+{
+    .tituloshero{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width:480px)
+{
+    .mapayqs{
+        flex-direction: column;
+    }
+}
+
+.btn-arriba{
+    position: absolute;
+    z-index: 999999;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(141, 65, 65);
+}

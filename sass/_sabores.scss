@@ -12,11 +12,18 @@
 .listas__lista{
     li{
         font-family: 'Bebas Neue', cursive;
-        font-size: 40px;
         text-transform: uppercase;
     }
 }
-@media screen and (min-width:576px) 
+@media screen and (min-width:992px)
+{
+    .listas__lista{
+        li{
+            font-size: 40px;
+        }
+    }
+}
+@media screen and (max-width:991px)
 {
     .listas__lista{
         li{
@@ -24,7 +31,7 @@
         }
     }
 }
-@media screen and (max-width:576px) 
+@media screen and (max-width:575px) 
 {
     .listas__lista{
         li{
@@ -33,11 +40,19 @@
     }
 
 }
-@media screen and (max-width:576px) 
+@media screen and (max-width:575px) 
 {
     .bodysabores{
         .titulosabores{
             font-size: 2em;
+        }
+    }
+}
+@media screen and (max-width:320px) 
+{
+    .bodysabores{
+        .titulosabores{
+            font-size: 27px;
         }
     }
 }

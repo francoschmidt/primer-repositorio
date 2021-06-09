@@ -11,13 +11,13 @@
 /*h2 de informacion*/
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
-@import 'header';
-@import 'footer';
-@import 'informacion';
-@import 'galeria';
-@import 'contacto';
-@import 'sabores';
-@import 'index';
+@import 'sass/header';
+@import 'sass/footer';
+@import 'sass/informacion';
+@import 'sass/galeria';
+@import 'sass/contacto';
+@import 'sass/sabores';
+@import 'sass/index';
 
 
 $colorfondo:clarito;
@@ -28,28 +28,5 @@ body{
         background-color:blue;
     }@else {
         color:black;
-    }
-}
-
-
-
-/* MEDIA QUERIES RESPONSIVE */
-
-@media only screen and (max-width:480px)
-{
-    .section{
-        flex-direction: column;
-    }
-}
-
-
-/* ANIMACIONES */
-
-@keyframes aparecer{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
     }
 }
