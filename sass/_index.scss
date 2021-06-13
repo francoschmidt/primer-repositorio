@@ -1,6 +1,7 @@
 /*para hero*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
-
+/*para maquinaescribir*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 .tituloshero{
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
@@ -10,6 +11,10 @@
     img{
         border-radius: 500px;
         filter: drop-shadow(2px 2px 5px black);
+    }
+    img:hover{
+        transform: rotate(360deg);
+        transition: 3s;
     }
 }
 
@@ -59,7 +64,8 @@
 	    position: relative; 
 	    float: left;
 	    color: #fff;
-	    font-size: 20px;
+	    font-size: 30px;
+        font-family: 'Caveat', cursive;
         span{
             position:absolute;
             padding: 2px;
@@ -76,15 +82,22 @@
     to { width:0 }
 }
 
-@media only screen and (max-width:343px)
+@media only screen and (max-width:400px)
 {
     .contenedor{
         .maqesq{
-            font-size: 15px;
+            font-size: 25px;
         }
     }
 }
-
+@media only screen and (max-width:299px)
+{
+    .contenedor{
+        .maqesq{
+            font-size: 20px;
+        }
+    }
+}
 /*maquina escribir fin*/
 
 @media screen and (max-width:800px) 
@@ -102,22 +115,13 @@
 @media screen and (max-width:400px) 
 {
     .tituloshero{
-        font-size: 15px;
+        font-size: 17px;
     }
 }
-
 
 @media only screen and (max-width:480px)
 {
     .mapayqs{
         flex-direction: column;
     }
-}
-
-.btn-arriba{
-    position: absolute;
-    z-index: 999999;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(141, 65, 65);
 }

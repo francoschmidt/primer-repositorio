@@ -10,7 +10,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*h2 de informacion*/
 @import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@200;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 header .navbar {
   background-image: -webkit-gradient(linear, left top, right top, from(#1313a5), to(#00ffdd));
   background-image: linear-gradient(to right, #1313a5, #00ffdd);
@@ -224,52 +227,140 @@ footer .footer__filtros .footer__redes .footer__redes--wp i:hover {
           filter: drop-shadow(5px 5px 5px black) grayscale(100%);
 }
 
-.filtros__contactotitulo {
+/*para el formulario menos el boton*/
+/*para boton enviar*/
+.bodycontacto {
+  background-position: center;
+  background-size: cover;
+}
+
+.bodycontacto .contactotitulo {
   font-size: 4em;
   text-align: center;
   text-shadow: 2px 2px 5px black;
   font-family: 'Montserrat';
 }
 
-.contacto__filtros .contacto__emailytel {
-  width: 450px;
-  height: auto;
-  border: 10px double;
-  background-color: white;
-  text-align: center;
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form input, form #comentarios {
+  width: 80%;
+  color: black;
+  border: 5px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+form .imput1, form #comentarios {
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+}
+
+form #boton1 {
+  background-color: #00ffdd;
+  border-radius: 100px;
+  font-family: 'Exo', sans-serif;
+  width: 35%;
+  margin-right: 10px;
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
-.contacto__filtros .contacto__emailytel .contacto__emailytel--logo {
-  font-size: 75px;
+form #boton1:hover {
+  background-color: #333;
+  color: #00ffdd;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
-.contacto__filtros .contacto__emailytel .contacto__emailytel--1 {
-  font-size: 55px;
-  font-family: monospace;
-  font-style: oblique;
+form #boton2 {
+  background-color: red;
+  border-radius: 100px;
+  padding: 1%;
+  font-family: 'Exo', sans-serif;
+  width: 35%;
+  margin-bottom: 20px;
 }
 
-.contacto__filtros .contacto__emailytel .contacto__emailytel--2 {
-  font-size: 20px;
-  font-style: oblique;
+form #boton2:hover {
+  background-color: #333;
+  color: red;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+form input::-webkit-input-placeholder, form #comentarios::-webkit-input-placeholder {
+  color: #9c9c9c;
+  font-family: 'Exo', sans-serif;
+}
+
+form input:-ms-input-placeholder, form #comentarios:-ms-input-placeholder {
+  color: #9c9c9c;
+  font-family: 'Exo', sans-serif;
+}
+
+form input::-ms-input-placeholder, form #comentarios::-ms-input-placeholder {
+  color: #9c9c9c;
+  font-family: 'Exo', sans-serif;
+}
+
+form input::placeholder, form #comentarios::placeholder {
+  color: #9c9c9c;
+  font-family: 'Exo', sans-serif;
+}
+
+form input:focus, form #comentarios:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 @media screen and (max-width: 600px) {
-  .filtros__contactotitulo {
+  .contactotitulo {
     font-size: 50px;
   }
 }
 
-@media screen and (max-width: 350px) {
-  .filtros__contactotitulo {
-    font-size: 40px;
+@media screen and (min-width: 501px) {
+  input::-webkit-input-placeholder, #comentarios::-webkit-input-placeholder, input, #comentarios {
+    font-size: 25px;
+  }
+  input:-ms-input-placeholder, #comentarios:-ms-input-placeholder, input, #comentarios {
+    font-size: 25px;
+  }
+  input::-ms-input-placeholder, #comentarios::-ms-input-placeholder, input, #comentarios {
+    font-size: 25px;
+  }
+  input::placeholder, #comentarios::placeholder, input, #comentarios {
+    font-size: 25px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .contacto__filtros .contacto__emailytel .contacto__emailytel--1 {
+  input::-webkit-input-placeholder, #comentarios, #comentarios::-webkit-input-placeholder, input, #comentarios {
+    font-size: 20px;
+  }
+  input:-ms-input-placeholder, #comentarios, #comentarios:-ms-input-placeholder, input, #comentarios {
+    font-size: 20px;
+  }
+  input::-ms-input-placeholder, #comentarios, #comentarios::-ms-input-placeholder, input, #comentarios {
+    font-size: 20px;
+  }
+  input::placeholder, #comentarios, #comentarios::placeholder, input, #comentarios {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contactotitulo {
     font-size: 40px;
   }
 }
@@ -323,6 +414,7 @@ footer .footer__filtros .footer__redes .footer__redes--wp i:hover {
 }
 
 /*para hero*/
+/*para maquinaescribir*/
 .tituloshero {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
@@ -332,6 +424,13 @@ footer .footer__filtros .footer__redes .footer__redes--wp i:hover {
   border-radius: 500px;
   -webkit-filter: drop-shadow(2px 2px 5px black);
           filter: drop-shadow(2px 2px 5px black);
+}
+
+.imgredondas img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 .mapayqs .mapayqs__filtros .filtros__qs .filtros__qs--texto {
@@ -374,7 +473,8 @@ footer .footer__filtros .footer__redes .footer__redes--wp i:hover {
   position: relative;
   float: left;
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
 }
 
 .contenedor .maqesq span {
@@ -406,9 +506,15 @@ footer .footer__filtros .footer__redes .footer__redes--wp i:hover {
   }
 }
 
-@media only screen and (max-width: 343px) {
+@media only screen and (max-width: 400px) {
   .contenedor .maqesq {
-    font-size: 15px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 299px) {
+  .contenedor .maqesq {
+    font-size: 20px;
   }
 }
 
@@ -427,7 +533,7 @@ footer .footer__filtros .footer__redes .footer__redes--wp i:hover {
 
 @media screen and (max-width: 400px) {
   .tituloshero {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -438,14 +544,6 @@ footer .footer__filtros .footer__redes .footer__redes--wp i:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-.btn-arriba {
-  position: absolute;
-  z-index: 999999;
-  width: 20px;
-  height: 20px;
-  background-color: #8d4141;
 }
 
 body {

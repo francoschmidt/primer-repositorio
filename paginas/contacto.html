@@ -57,50 +57,21 @@
     </nav>
   </header>
 
-  <h1 class="filtros__contactotitulo mt-3 text-center wow shake">Contacto</h1>
+  <!-- titulo -->
+  <h1 class="contactotitulo mt-3 text-center wow shake">Contacto</h1>
 
     <!-- formulario -->
+  <form action="enviar.php" method="POST">
+    <input type="text" name="nombre" class="imput1" id="nombre" placeholder="Nombre" required>
+    <input type="text" name="apellido" class="imput1 mt-2" id="apellido" placeholder="Apellido" required>
+    <input type="email" name="correo" class="imput1 mt-2" id="correo" placeholder="E-mail" required>
+    <input type="text" name="telefono" class="imput1 mt-2" id="telefono" placeholder="Teléfono" required>
+    <textarea class="mt-3" name="comentarios" id="comentarios" placeholder="Escribe tu comentario" cols="30" rows="5"></textarea>
+    <input class="mt-3" type="submit" value="Enviar" id="boton1">
+    <input class="mt-3" type="reset" value="Borrar" id="boton2">
+  </form>
 
-  <div class="container mt-3">
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-      <label class="form-check-label" for="flexRadioDefault1">
-        Consulta
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-      <label class="form-check-label" for="flexRadioDefault2">
-        Reclamo
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-      <label class="form-check-label" for="flexRadioDefault3">
-        Sugerencia
-      </label>
-    </div>
-    <div class="form-floating">
-      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-      <label for="floatingTextarea">Ingrese texto aquí</label>
-    </div>
-    <button class="btn btn-primary mt-1 mb-1" type="submit">Enviar</button>
-  </div>
 
-  <!-- recuadros email y telefono -->
-
-  <div class="contacto__filtros d-flex justify-content-center flex-wrap">
-    <div class="contacto__emailytel wow slideInLeft mx-4" data-wow-duration="2s">
-      <i class="contacto__emailytel--logo far fa-envelope mt-4"></i>
-      <p class="contacto__emailytel--1 mt-4">E-mail</p>
-      <p class="contacto__emailytel--2 flex-wrap">victoria-tqt@gmail.com</p>
-    </div>
-    <div class="contacto__emailytel mx-4 wow slideInRight" data-wow-duration="2s">
-      <i class="contacto__emailytel--logo fas fa-mobile-alt mt-4"></i>
-      <p class="contacto__emailytel--1 mt-4">Teléfono</p>
-      <p class="contacto__emailytel--2">(+54) 9 291 155388789</p>
-    </div>  
-  </div>
 
   <!-- footer -->
   <footer class="footer container-fluid">
