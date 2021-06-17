@@ -117,7 +117,7 @@ footer .footer__filtros .footer__redes .footer__redes--wp i:hover {
 }
 
 .bodyinformacion {
-  background: url(multimedia/IMG_20210614_145014576_HDR.jpg);
+  background: url(multimedia/helaafuera.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -394,7 +394,7 @@ form input:focus, form #comentarios:focus {
 }
 
 .bodysabores {
-  background-image: url(multimedia/IMG_20210614_145014576_HDR.jpg);
+  background: url(multimedia/helaafuera.jpg);
   background-size: cover;
   background-position: center;
 }
