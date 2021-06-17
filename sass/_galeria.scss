@@ -14,6 +14,11 @@
                 filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
                 transition: 2s;
             }
+            img:hover{
+                filter: drop-shadow(5px 5px 5px rgb(0, 0, 0)) grayscale(100%);
+                transform: scale(0.95);
+                transition: .8s;
+            }
         }
     }
 }
@@ -37,13 +42,6 @@
             img{
                 border-radius: 50px;
             }
-        }
-    }
-}
-.contenedor{
-    .contenedor__fotos{
-        img:hover{
-            filter: drop-shadow(5px 5px 5px rgb(0, 0, 0)) grayscale(100%);
         }
     }
 }

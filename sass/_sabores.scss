@@ -1,58 +1,66 @@
 .bodysabores{
-    background-image: url(multimedia/imghela22.jpg);
-    background-repeat: no-repeat;
+    background-image: url(multimedia/IMG_20210614_145014576_HDR.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    .titulosabores{
-        font-family: 'Montserrat';
-        font-size: 50px;
-        text-shadow: 2px 2px 5px rgb(255, 255, 255);
-    }
-}
-.listas__lista{
-    li{
-        font-family: 'Bebas Neue', cursive;
-        text-transform: uppercase;
+    background-position: center;
+    .sabores{
+        background-color: rgba(0, 0, 0, 0.8);
+        .titulosabores{
+            font-family: 'Montserrat';
+            text-shadow: 2px 2px 5px rgb(255, 255, 255);
+        }
+        .sabores__listas{
+            overflow: hidden;
+            .listas__lista{
+                li{
+                    font-family: 'Bebas Neue', cursive;
+                    text-transform: uppercase;
+                }
+            }
+        }
     }
 }
 @media screen and (min-width:992px)
 {
-    .listas__lista{
-        li{
-            font-size: 40px;
+    .titulosabores{
+        font-size: 50px;
+    }
+    .sabores__listas{
+        .listas__lista{
+            li{
+                font-size: 35px;
+            }
         }
     }
 }
 @media screen and (max-width:991px)
 {
-    .listas__lista{
-        li{
-            font-size: 30px;
+    .titulosabores{
+        font-size: 35px;
+    }
+    .sabores__listas{
+        .listas__lista{
+            li{
+                font-size: 25px;
+            }
         }
     }
 }
 @media screen and (max-width:575px) 
 {
-    .listas__lista{
-        li{
-            font-size: 20px;
-        }
+    .titulosabores{
+        font-size: 32px;
     }
-
-}
-@media screen and (max-width:575px) 
-{
-    .bodysabores{
-        .titulosabores{
-            font-size: 2em;
+    .sabores__listas{
+        .listas__lista{
+            li{
+                font-size: 20px;
+            }
         }
     }
 }
 @media screen and (max-width:320px) 
 {
-    .bodysabores{
-        .titulosabores{
-            font-size: 27px;
-        }
+    .titulosabores{
+        font-size: 27px;
     }
 }

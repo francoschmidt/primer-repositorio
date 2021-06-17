@@ -1,17 +1,38 @@
-.informacion{
-    h1{
-    font-family: 'Montserrat';
-    font-size: 60px;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+.bodyinformacion{
+    background: url(multimedia/IMG_20210614_145014576_HDR.jpg);
+    background-position: center;
+    background-size: cover;
+    .sectioninfo{
+        background-color: rgba(255, 255, 255, 0.6);
+        .row{
+            .informacion{
+                h1{
+                font-family: 'Montserrat';
+                text-shadow: 2px 2px 5px rgb(0, 0, 0);
+                }
+            }
+            .actualidad, .protocolos, .nuevospagos, .otrainfo{
+                h2{
+                    font-family: 'Mate SC', serif;
+                }
+                p{
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
     }
 }
-.actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2{
-    font-family: 'Mate SC', serif;
-    font-size: 45px;
-}
-.actualidad p, .protocolos p, .nuevospagos p, .otrainfo p{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+@media screen and (min-width:1202px) 
+{
+    .informacion h1{
+        font-size: 60px;
+    }
+    .actualidad h2, .protocolos h2, .nuevospagos h2, .otrainfo h2{
+        font-size: 45px;
+    }
+    .actualidad p, .protocolos p, .nuevospagos p, .otrainfo p{
+        font-size: 25px;
+    }
 }
 @media screen and (max-width:1201px) 
 {
