@@ -1,17 +1,12 @@
-/* hero section */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap");
-/* direccion footer */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-/* VICTORIA CREAM */
-@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
 /*para los h1 sabores, informacion, galeria, contacto*/
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
-/* listas de sabores */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-/*h2 de informacion*/
+/* VICTORIA CREAM */
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mate+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 header .navbar {
@@ -34,6 +29,14 @@ header .navbar div #navbarNavAltMarkup .linksheader {
   color: black;
   font-weight: bold;
   font-size: 18px;
+}
+
+header .navbar div #navbarNavAltMarkup .linksheader a:hover {
+  color: #3b3b3b;
+}
+
+header .navbar div #navbarNavAltMarkup .linksheader:hover {
+  color: #3b3b3b;
 }
 
 @media screen and (max-width: 296px) {
@@ -60,6 +63,7 @@ header .navbar div #navbarNavAltMarkup .linksheader {
   }
 }
 
+/* direccion footer */
 footer {
   background: #a0a0a8;
   -webkit-box-shadow: -1px -1px 10px black;
@@ -116,6 +120,7 @@ footer .footer__filtros .footer__redes .footer__redes--wp i:hover {
   color: #22f02c;
 }
 
+/*h2 de informacion*/
 .bodyinformacion {
   background: url(multimedia/helaafuera.jpg);
   background-position: center;
@@ -393,6 +398,7 @@ form input:focus, form #comentarios:focus {
   }
 }
 
+/* listas de sabores */
 .bodysabores {
   background: url(multimedia/helaafuera.jpg);
   background-size: cover;
@@ -450,8 +456,8 @@ form input:focus, form #comentarios:focus {
   }
 }
 
-/*para hero*/
-/*para maquinaescribir*/
+/* hero section */
+/*maquina de escribir*/
 .tituloshero {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
@@ -480,7 +486,7 @@ form input:focus, form #comentarios:focus {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .filtros__qs:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -590,5 +596,22 @@ form input:focus, form #comentarios:focus {
 
 body {
   background-color: #e0d69f;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
 }
 /*# sourceMappingURL=estilos.css.map */

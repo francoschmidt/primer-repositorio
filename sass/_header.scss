@@ -1,3 +1,6 @@
+/* VICTORIA CREAM */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
 $amarillo:yellow;
 header{
     .navbar{
@@ -16,6 +19,12 @@ header{
                     color: black;
                     font-weight: bold;
                     font-size: 18px;
+                    a:hover{
+                        color: rgb(59, 59, 59);
+                    }
+                }
+                .linksheader:hover{
+                    color: rgb(59, 59, 59);
                 }
             }
         }
@@ -33,7 +42,6 @@ header{
         }
     }
 }
-
 @keyframes aparecer{
     0%{
         opacity: 0;

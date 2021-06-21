@@ -1,15 +1,5 @@
-/* hero section */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
-/* direccion footer */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-/* VICTORIA CREAM */
-@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
 /*para los h1 sabores, informacion, galeria, contacto*/
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-/* listas de sabores */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-/*h2 de informacion*/
-@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
 @import 'sass/header';
 @import 'sass/footer';
@@ -28,4 +18,16 @@ body{
     }@else {
         color:black;
     }
+}
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(224, 224, 224);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: gray;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
 }

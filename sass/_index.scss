@@ -1,6 +1,6 @@
-/*para hero*/
+/* hero section */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
-/*para maquinaescribir*/
+/*maquina de escribir*/
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 .tituloshero{
     font-size: 40px;
@@ -37,7 +37,7 @@
         }
     }
 }
-@media screen and (min-width:992px) 
+@media screen and (min-width:1200px) 
 {
     .filtros__qs:hover{
         transform: scale(1.1);
