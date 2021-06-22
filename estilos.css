@@ -594,6 +594,16 @@ form input:focus, form #comentarios:focus {
   }
 }
 
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999999;
+  background: url("multimedia/descarga.png") 50% 50% no-repeat #fff;
+}
+
 body {
   background-color: #e0d69f;
 }
