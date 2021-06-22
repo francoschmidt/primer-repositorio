@@ -29,7 +29,17 @@
     <title>HV Contacto</title>
 </head>
 <body class="bodycontacto">
-  <!-- header -->
+
+ <!-- loader -->
+ <div class="loader">
+  <p>VICTORIA CREAM</p>
+  <!-- maquina de escribir loader -->
+  <div class="loaderMaqEsc">
+    <h1 class="loaderMaqEscH1">Cargando...<span>&#160;</span></h1>
+  </div>
+</div>
+  <!-- loader fin -->
+  
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -85,5 +95,12 @@
       <p class="footer__copyright text-center">© Copyright 2021 Victoria Cream Tornquist</p>
     </div>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+    </script>
 </body>
 </html>

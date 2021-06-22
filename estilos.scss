@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 /* VICTORIA CREAM LOADER*/
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+/* cargando... LOADER*/
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
 
 @import 'sass/header';
 @import 'sass/footer';
@@ -61,6 +63,7 @@ body::-webkit-scrollbar-thumb {
 	        float: left;
 	        color: rgb(0, 0, 0);
 	        font-size: 30px;
+            font-family: 'Benne', serif;
             span{
                 position:absolute;
                 padding: 2px;
